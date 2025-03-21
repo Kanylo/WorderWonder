@@ -1,0 +1,136 @@
+/* Main application styles */
+QMainWindow {
+    background-color: #f5f5f5;
+}
+
+/* Drop area styling */
+DropArea {
+    background-color: #ffffff;
+    border: 2px dashed #aaaaaa;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 100px;
+}
+
+DropArea:hover {
+    border-color: #3498db;
+    background-color: #ecf0f1;
+}
+
+/* Message area styling */
+QFrame#messageArea {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 200px;
+}
+
+QLabel#messageBox {
+    background-color: transparent;
+    color: #333333;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Message styling for the chat box */
+QLabel#messageBox .message {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Styling for the scrollbar in message area */
+QScrollArea {
+    border: none;
+    background: transparent;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: #f0f0f0;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #c0c0c0;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* Button styles */
+QPushButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:disabled {
+    background-color: #cccccc;
+    color: #888888;
+}
+
+QPushButton#convert_btn {
+    background-color: #2ecc71;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+QPushButton#convert_btn:hover {
+    background-color: #27ae60;
+}
+
+/* Frame styles */
+QFrame {
+    border-radius: 4px;
+}
+
+/* Labels */
+QLabel {
+    color: #2c3e50;
+}
+
+/* Combo box styles */
+QComboBox {
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
+    padding: 5px;
+    min-width: 6em;
+}
+
+QComboBox:hover {
+    border-color: #3498db;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/* Result label */
+QLabel#result_label {
+    background-color: #ecf0f1;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
